@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    background-image: url("https://images.unsplash.com/photo-1562059390-a761a084768e?auto=format&fit=crop&q=60&w=700&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D");
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    height: 140vh;
+    width: 80vw;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 50vw;
+}
+.header p{
+    width: 30vw;
+    text-align: center;
+}
+.cards{
+    display: grid;
+    gap: 10px;
+    width: 60vw;
+    height: 80vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    padding: 10px;
+}
+.card{
+    border: 1px solid gray;
+    width: 175px;
+    height: 285px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card img{
+    height: 120px;
+    width: 174px;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    box-sizing: border-box;
+}
+.card img:hover{
+    transform: scale(1.05)
+}
+.des{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.a img{
+    width: 15px;
+    height: 15px;
+}
+.a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: small;
+}
+.intro{
+    width: 65px;
+}
+.intro a{
+    text-decoration: none;
+}
+footer{
+    height: 20px;
+}
